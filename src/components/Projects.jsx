@@ -1,15 +1,11 @@
 import React from "react";
+import ProjectList from "./ProjectList";
 
 const Projects = () => {
   return (
     <section>
       <h1>Projects</h1>
-      <ul>
-        <li>
-            <h2>MemoBoard</h2>
-            <div>image</div>
-        </li>
-      </ul>
+      <ProjectList />
     </section>
   );
 };

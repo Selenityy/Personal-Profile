@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <h1>Hi, my name is Selena Rodriguez!</h1>
       <p>
         I have always been a very curious person and someone who wants to keep

@@ -4,7 +4,7 @@ import WorkExperienceSection from "./WorkExperienceSection";
 
 const Resume = () => {
   return (
-    <section>
+    <section id="resume">
       <h1>Resume</h1>
       <EducationSection />
       <WorkExperienceSection />

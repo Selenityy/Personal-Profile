@@ -4,11 +4,13 @@ const Header = () => {
   return (
     <header>
       <h1>Selena Rodriguez</h1>
-      <nav>Home</nav>
-      <nav>About</nav>
-      <nav>Project</nav>
-      <nav>Resume</nav>
-      <nav>Contact</nav>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
   );
 };

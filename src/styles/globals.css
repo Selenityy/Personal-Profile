@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background: url("https://www.toptal.com/designers/subtlepatterns/uploads/xv.png");
+  background-attachment: fixed;
 }
 
 .font-poppins {

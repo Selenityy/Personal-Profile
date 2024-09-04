@@ -14,6 +14,7 @@ const Home = () => {
         className="rounded-full object-cover size-72"
       />
       <div className="flex flex-col items-center">
+        <p>Hi, I am</p>
         <h1 className="font-poppins font-bold text-4xl">Selena Rodriguez</h1>
         <h2 className="text-2xl">Full Stack Developer</h2>
       </div>

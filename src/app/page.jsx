@@ -8,14 +8,14 @@ import Resume from "@/components/Resume";
 
 export default function Page() {
   return (
-    <>
+    <div className="flex flex-col">
       <Header />
       <Home />
       <About />
       <Logos />
       <Projects />
       <Resume />
-      <Contact />
-    </>
+      {/* <Contact /> */}
+    </div>
   );
 }

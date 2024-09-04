@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <nav className="flex justify-between">
         <a href="#home">Home</a>
         <a href="#about">About</a>

@@ -3,8 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <h1>Selena Rodriguez</h1>
-      <nav>
+      <nav className="flex justify-between">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>

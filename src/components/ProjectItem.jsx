@@ -3,7 +3,7 @@ import React from "react";
 const ProjectItem = ({ title, description, liveDemo, github, image }) => {
   return (
     <li>
-      <h2>{title}</h2>
+      <h2 className="font-bold">{title}</h2>
       <div>
         {/* Replace this with an <img> tag or Image component */}
         {image}

@@ -24,7 +24,7 @@ const WorkExperienceEntry = ({
           year: "numeric",
         })}
       </time>
-      <ul>
+      <ul className="list-disc list-inside">
         {responsibilities.map((item, index) => (
           <li key={index}>{item}</li>
         ))}

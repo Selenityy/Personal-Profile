@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@font-face {
+  font-family: "Victorian Demo";
+  src: url("/fonts/VictorianDemo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Victorian Decade";
+  src: url("/fonts/VictorianDecade.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Butler";
+  src: url("/fonts/Butler.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Butler Bold";
+  src: url("/fonts/ButlerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Butler Black";
+  src: url("/fonts/ButlerBlack.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +36,27 @@ body {
 }
 
 .font-poppins {
-  font-family: "Poppins", sans-serif; /* Custom class for Poppins */
+  font-family: "Poppins", sans-serif;
+}
+
+.font-butler {
+  font-family: "Butler", sans-serif;
+}
+
+.font-butler-bold {
+  font-family: "Butler Bold", sans-serif;
+}
+
+.font-butler-black {
+  font-family: "Butler Black", sans-serif;
+}
+
+.font-victorian-demo {
+  font-family: "Victorian Demo", sans-serif;
+}
+
+.font-victorian-decade {
+  font-family: "Victorian Decade", sans-serif;
 }
 
 .background-floral {

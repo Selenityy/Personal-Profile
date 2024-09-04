@@ -13,3 +13,19 @@ body {
 .font-poppins {
   font-family: "Poppins", sans-serif; /* Custom class for Poppins */
 }
+
+.background-floral {
+  @apply bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/xv.png')];
+}
+
+.dark .background-floral {
+  @apply bg-[url('/images/dark_background.png')] bg-repeat bg-auto;
+}
+
+.text-color {
+  @apply text-black;
+}
+
+.dark .text-color {
+  @apply text-white;
+}

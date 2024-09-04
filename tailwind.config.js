@@ -26,5 +26,6 @@ module.exports = {
       lg: "1440px",
     },
   },
+  darkMode: "class",
   plugins: [],
 };

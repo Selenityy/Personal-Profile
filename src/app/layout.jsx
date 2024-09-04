@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -8,7 +9,10 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <main className="container mx-auto py-4 max-w-4xl">{children}</main>
+        <main className="container mx-auto py-4 max-w-4xl">
+          <Header />
+          <div>{children}</div>
+        </main>
       </body>
     </html>
   );

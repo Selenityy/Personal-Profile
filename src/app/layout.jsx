@@ -1,21 +1,19 @@
-import Header from "@/components/Header";
 import "@/styles/globals.css";
+import React from "react";
+import RootLayout from "@/components/RootLayout";
 
 export const metadata = {
   title: "Selena Portfolio",
 };
 
-const RootLayout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <main className="container mx-auto py-4 max-w-4xl">
-          <Header />
-          <div>{children}</div>
-        </main>
+        <RootLayout>{children}</RootLayout>
       </body>
     </html>
   );
 };
 
-export default RootLayout;
+export default Layout;

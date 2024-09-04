@@ -7,17 +7,17 @@ import { MdOutlineLightMode } from "react-icons/md";
 
 const Header = ({ toggleDarkMode, isDarkMode }) => {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState("home");
+  //   const [activeTab, setActiveTab] = useState("home");
 
-  const handleTabClick = (tabName, path) => {
-    setActiveTab(tabName); // Set the active tab
-    router.push(path); // Navigate to the corresponding path
-  };
+  //   const handleTabClick = (tabName, path) => {
+  //     setActiveTab(tabName); // Set the active tab
+  //     router.push(path); // Navigate to the corresponding path
+  //   };
 
   return (
     <header className="px-8 py-6 bg-whisper dark:bg-goth flex items-center justify-between">
       <nav className="flex space-x-10">
-        <div
+        {/* <div
           onClick={() => handleTabClick("home", "/")}
           className={`font-butler-bold tracking-wide	text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
             activeTab === "home" ? "font-butler-black text-lg" : ""
@@ -61,7 +61,37 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
           tabIndex={0}
         >
           Contact
-        </div>
+        </div> */}
+        <a
+          href="#home"
+          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+        >
+          About
+        </a>
+        <a
+          href="#projects"
+          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+        >
+          Projects
+        </a>
+        <a
+          href="#resume"
+          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+        >
+          Resume
+        </a>
+        <a
+          href="#contact"
+          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+        >
+          Contact
+        </a>
       </nav>
       <div className="pr-4">
         {isDarkMode ? (

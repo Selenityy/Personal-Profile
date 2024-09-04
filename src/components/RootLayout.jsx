@@ -29,7 +29,7 @@ const RootLayout = ({ children }) => {
       <div className="sticky top-0 z-50 border-b border-zinc-400">
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </div>
-      <div className="container mx-auto py-4 max-w-4xl min-h-screen">
+      <div className="container mx-auto py-4 max-w-4xl min-h-screen" id="home">
         {children}
       </div>
     </main>

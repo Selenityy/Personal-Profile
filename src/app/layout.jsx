@@ -8,7 +8,7 @@ export const metadata = {
 
 const Layout = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body>
         <RootLayout>{children}</RootLayout>
       </body>

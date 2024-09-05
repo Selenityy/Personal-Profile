@@ -26,7 +26,7 @@ const Contact = () => {
       <div>
         <GoMoveToTop
           onClick={onArrowClick}
-          className="animate-bounce fill-black size-8"
+          className="animate-bounce arrow-color size-8"
         />
       </div>
     </section>

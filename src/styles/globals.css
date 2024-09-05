@@ -74,3 +74,11 @@ body {
 .dark .text-color {
   @apply text-white;
 }
+
+.arrow-color {
+  @apply fill-black;
+}
+
+.dark .arrow-color {
+  @apply fill-white;
+}

@@ -33,14 +33,24 @@ module.exports = {
           "0%": { backgroundPosition: "200% 50%" }, // Start gradient position
           "100%": { backgroundPosition: "0% 50%" }, // End gradient position
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(1deg)" },
+          "50%": { transform: "rotate(-1deg)" },
+        },
       },
       animation: {
         rainbow: "rainbow 7s linear infinite", // 5s duration, linear timing, infinite loop
         rainbowFlow: "rainbowFlow 10s linear infinite", // 3s duration, linear timing, infinite loop
+        wiggle: "wiggle 1s ease-in-out infinite",
       },
       colors: {
         whisper: "#EEEEEE",
         goth: "#101010",
+      },
+    },
+    variants: {
+      extend: {
+        animation: ["hover"],
       },
     },
     screens: {

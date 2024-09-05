@@ -7,12 +7,11 @@ import { MdOutlineLightMode } from "react-icons/md";
 
 const Header = ({ toggleDarkMode, isDarkMode }) => {
   const router = useRouter();
-  //   const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("home");
 
-  //   const handleTabClick = (tabName, path) => {
-  //     setActiveTab(tabName); // Set the active tab
-  //     router.push(path); // Navigate to the corresponding path
-  //   };
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName); // Set the active tab
+  };
 
   return (
     <header className="px-8 py-6 bg-whisper dark:bg-goth flex items-center justify-between">
@@ -64,31 +63,46 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         </div> */}
         <a
           href="#home"
-          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+          className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
+            activeTab === "home" ? "font-butler-black text-lg" : ""
+          }`}
+          onClick={() => handleTabClick("home")}
         >
           Home
         </a>
         <a
           href="#about"
-          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+          className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
+            activeTab === "about" ? "font-butler-black text-lg" : ""
+          }`}
+          onClick={() => handleTabClick("about")}
         >
           About
         </a>
         <a
           href="#projects"
-          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+          className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
+            activeTab === "projects" ? "font-butler-black text-lg" : ""
+          }`}
+          onClick={() => handleTabClick("projects")}
         >
           Projects
         </a>
         <a
           href="#resume"
-          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+          className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
+            activeTab === "resume" ? "font-butler-black text-lg" : ""
+          }`}
+          onClick={() => handleTabClick("resume")}
         >
           Resume
         </a>
         <a
           href="#contact"
-          className="font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer"
+          className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
+            activeTab === "contact" ? "font-butler-black text-lg" : ""
+          }`}
+          onClick={() => handleTabClick("contact")}
         >
           Contact
         </a>

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
+import Image from "next/image";
 
 const ProjectList = () => {
   const projects = [
@@ -8,28 +9,24 @@ const ProjectList = () => {
       description: "A full stack task and project management application.",
       liveDemo: "https://memo-board-frontend.vercel.app/",
       github: "https://github.com/Selenityy/MemoBoard",
-      image: "image_url",
+      image: "/images/MemoBoard1.png",
+      hoverImage: "/images/MemoBoard2.png",
     },
     {
       title: "OdinBook",
       description: "A full stack mock social media application.",
       liveDemo: "https://odin-book-frontend.vercel.app/",
       github: "https://github.com/Selenityy/OdinBook",
-      image: "image_url",
-    },
-    {
-      title: "Weather",
-      description: "A front-end forecast and weather application.",
-      liveDemo: "https://selenityy.github.io/Weather_App/",
-      github: "https://github.com/Selenityy/Weather_App",
-      image: "image_url",
+      image: "/images/OdinBook1.png",
+      hoverImage: "/images/OdinBook2.png",
     },
     {
       title: "Memory Card",
       description: "A front-end memory card game.",
       liveDemo: "https://luminous-dango-379baf.netlify.app/",
       github: "https://github.com/Selenityy/Memory-Card/tree/main/Memory-Card",
-      image: "image_url",
+      image: "/images/MemoryGame1.png",
+      hoverImage: "/images/MemoryGame2.png",
     },
     {
       title: "CV Application",
@@ -37,28 +34,40 @@ const ProjectList = () => {
       liveDemo: "https://lovely-lolly-c8af73.netlify.app/",
       github:
         "https://github.com/Selenityy/CV-Application/tree/main/cv-application",
-      image: "image_url",
+      image: "/images/CV1.png",
+      hoverImage: "/images/CV2.png",
+    },
+    {
+      title: "Weather",
+      description: "A front-end forecast and weather application.",
+      liveDemo: "https://selenityy.github.io/Weather_App/",
+      github: "https://github.com/Selenityy/Weather_App",
+      image: "/images/Weather1.png",
+      hoverImage: "/images/Weather2.png",
     },
     {
       title: "Restaurant",
       description: "A front-end mock restaurant website.",
       liveDemo: "https://selenityy.github.io/Restaurant-Page/",
       github: "https://github.com/Selenityy/Restaurant-Page",
-      image: "image_url",
+      image: "/images/Restaurant1.png",
+      hoverImage: "/images/Restaurant2.png",
     },
     {
       title: "Tic-Tac-Toe",
       description: "A front-end tic-tac-toe web game.",
       liveDemo: "https://selenityy.github.io/Tic-Tac-Toe/",
       github: "https://github.com/Selenityy/Tic-Tac-Toe",
-      image: "image_url",
+      image: "/images/TicTacToe1.png",
+      hoverImage: "/images/TicTacToe2.png",
     },
     {
       title: "Calculator",
       description: "A front-end calculator application.",
       liveDemo: "https://selenityy.github.io/Calculator/",
       github: "https://github.com/Selenityy/Calculator",
-      image: "image_url",
+      image: "/images/Calc1.png",
+      hoverImage: "/images/Calc2.png",
     },
   ];
   return (

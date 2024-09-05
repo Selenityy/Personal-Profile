@@ -16,13 +16,19 @@ const About = () => {
       <h1 className="font-victorian-demo text-8xl font-bold text-color font-light">
         About
       </h1>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-around">
         <div className="relative w-80 h-80 my-8">
-          {/* Frame Image */}
+          {/* Light Mode Frame Image */}
           <img
-            src="/images/victorian-frame2.png"
+            src="/images/victorian-frame1.png"
             alt="Victorian Frame"
-            className="w-full h-full relative z-30"
+            className="w-full h-full relative z-30 dark:hidden"
+          />
+          {/* Dark Mode Frame Image */}
+          <img
+            src="/images/dark-victorian-frame1.png"
+            alt="Victorian Frame"
+            className="w-full h-full relative z-30 hidden dark:block"
           />
 
           {/* Profile Picture */}
@@ -33,11 +39,11 @@ const About = () => {
           />
         </div>
         <div className="w-1/2">
-          <div className="flex gap-2">
-            <p className="font-butler text-lg">Hi, my name is</p>
-            <p className="font-butler text-lg">Selena Rodriguez</p>
+          <div className="flex gap-1.5">
+            <p className="font-butler text-color text-lg">Hi, my name is</p>
+            <p className="font-butler text-color text-lg">Selena Rodriguez</p>
           </div>
-          <p className="font-butler text-lg w-full text-wrap">
+          <p className="font-butler text-color text-lg w-full text-wrap">
             I have always been a very curious person and someone who wants to
             keep learning. With a background in psychology, content creation,
             gaming, and esports, I have a very unique skill set that blends my
@@ -51,7 +57,7 @@ const About = () => {
       <div className="flex items-center justify-center mt-20">
         <IoIosArrowDown
           onClick={onArrowClick}
-          className="animate-bounce fill-black size-8"
+          className="animate-bounce arrow-color size-8"
         />
       </div>
     </section>

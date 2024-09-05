@@ -22,20 +22,20 @@ const About = () => {
           <img
             src="/images/victorian-frame2.png"
             alt="Victorian Frame"
-            className="w-full h-full z-30"
+            className="w-full h-full relative z-30"
           />
 
           {/* Profile Picture */}
           <img
             src="/images/profilePic.png"
             alt="Profile Picture"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 rounded-full object-cover"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 rounded-full object-cover z-10"
           />
         </div>
         <div className="w-1/2">
-          <div className="flex items-center flex-wrap space-x-1">
-            <p className="font-butler text-lg w-full">Hi, my name is</p>
-            <p className="font-butler text-lg w-full">Selena Rodriguez</p>
+          <div className="flex gap-2">
+            <p className="font-butler text-lg">Hi, my name is</p>
+            <p className="font-butler text-lg">Selena Rodriguez</p>
           </div>
           <p className="font-butler text-lg w-full text-wrap">
             I have always been a very curious person and someone who wants to

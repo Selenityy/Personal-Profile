@@ -82,3 +82,11 @@ body {
 .dark .arrow-color {
   @apply fill-white;
 }
+
+.button-color {
+  @apply text-black border border-black hover:bg-black hover:text-white;
+}
+
+.dark .button-color {
+  @apply text-white border border-white hover:bg-white hover:text-black;
+}

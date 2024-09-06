@@ -21,6 +21,14 @@ const ProjectItem = ({
     router.push(liveDemo);
   };
 
+  const handleLiveClick = () => {
+    router.push(liveDemo);
+  };
+
+  const handleGitHubClick = () => {
+    router.push(github);
+  };
+
   return (
     <li className="my-16">
       {/* <h2 className="font-butler-bold text-2xl text-color">{title}</h2> */}
@@ -47,13 +55,6 @@ const ProjectItem = ({
             alt="Dark Victorian Frame"
             className="absolute w-full h-full z-30 object-contain hidden dark:block"
           />
-          {/* <Image
-            src={isHovered ? hoverImage : image}
-            alt={title}
-            width={500}
-            height={300}
-            className="rounded-lg absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-9/12 h-9/12 object-contain transition-all duration-1000 ease-in-out"
-          /> */}
 
           {/* Default Image */}
           <Image
@@ -89,24 +90,20 @@ const ProjectItem = ({
           <p className="font-butler text-color text-md">{description}</p>
           <div className="flex gap-3 mt-4">
             <div>
-              <a
-                href={liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-700 underline font-butler"
+              <button
+                className="px-3 py-1 border button-color font-bold rounded-lg shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1 focus:outline-none transition duration-300 text-sm"
+                onClick={handleLiveClick}
               >
-                Live Demo
-              </a>
+                Live
+              </button>
             </div>
             <div>
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-700 underline font-butler"
+              <button
+                className="px-2 py-1 border button-color font-bold rounded-lg shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1 focus:outline-none transition duration-300 text-sm"
+                onClick={handleGitHubClick}
               >
                 GitHub
-              </a>
+              </button>
             </div>
           </div>
         </div>

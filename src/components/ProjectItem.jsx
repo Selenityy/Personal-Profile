@@ -2,25 +2,38 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ProjectItem = ({
   title,
   description,
+  subtitle,
   liveDemo,
   github,
   image,
   hoverImage,
+  placement,
 }) => {
-  const [isHovered, setIsHovered] = useState(false); // State to manage hover
+  const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+
+  const handleImageClick = () => {
+    router.push(liveDemo);
+  };
 
   return (
-    <li className="my-12">
-      <h2 className="font-butler-bold text-2xl">{title}</h2>
-      <div className="flex items-center justify-around">
+    <li className="my-16">
+      {/* <h2 className="font-butler-bold text-2xl text-color">{title}</h2> */}
+      <div
+        className={`flex items-center gap-10 ${
+          placement === "right" ? "flex-row-reverse" : ""
+        }`}
+      >
         <div
           className="relative w-[35rem] h-[20rem] my-6 hover:animate-wiggle"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onClick={handleImageClick}
         >
           {/* Light Mode Frame Image */}
           <img
@@ -64,9 +77,17 @@ const ProjectItem = ({
             }`}
           />
         </div>
-        <div className="flex flex-col  items-start">
-          <p className="font-butler">{description}</p>
-          <div className="flex gap-4 mt-4">
+        <div
+          className={`flex flex-col ${
+            placement === "right" ? "items-end" : "items-start"
+          }`}
+        >
+          <h2 className="font-butler-black text-2xl text-color">{title}</h2>
+          <h3 className="font-butler-bold text-lg text-color pb-4">
+            {subtitle}
+          </h3>
+          <p className="font-butler text-color text-md">{description}</p>
+          <div className="flex gap-3 mt-4">
             <div>
               <a
                 href={liveDemo}

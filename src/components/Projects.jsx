@@ -13,17 +13,17 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className=" min-h-screen py-32">
+    <section id="projects" className="min-h-screen py-32">
       <h1 className="font-victorian-demo text-8xl font-bold text-color font-light">
         Projects
       </h1>
       <ProjectList />
-      <div>
+      {/* <div className="flex items-center justify-center mt-20">
         <IoIosArrowDown
           onClick={onArrowClick}
           className="animate-bounce arrow-color size-8"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

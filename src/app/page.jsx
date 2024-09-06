@@ -3,7 +3,6 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Logos from "@/components/Logos";
 import Projects from "@/components/Projects";
-import Resume from "@/components/Resume";
 
 export default function Page() {
   return (
@@ -17,12 +16,6 @@ export default function Page() {
       />
       {/* <Logos /> */}
       <Projects />
-      <img
-        src="/images/border2.png"
-        alt="border"
-        className="opacity-75 py-10 dark:invert"
-      />
-      <Resume />
       <img
         src="/images/border2.png"
         alt="border"

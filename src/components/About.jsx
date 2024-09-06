@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="min-h-screen py-32">
+    <section id="about" className="h-fit py-32">
       <h1 className="font-victorian-demo text-8xl font-bold text-color font-light">
         About
       </h1>
@@ -54,12 +54,12 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-20">
+      {/* <div className="flex items-center justify-center mt-20">
         <IoIosArrowDown
           onClick={onArrowClick}
           className="animate-bounce arrow-color size-8"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

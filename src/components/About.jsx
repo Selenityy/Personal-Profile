@@ -2,6 +2,7 @@
 
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Logos from "./Logos";
 
 const About = () => {
   const onArrowClick = () => {
@@ -60,6 +61,9 @@ const About = () => {
           className="animate-bounce arrow-color size-8"
         />
       </div> */}
+      <div>
+        <Logos />
+      </div>
     </section>
   );
 };

@@ -83,10 +83,60 @@ body {
   @apply fill-white;
 }
 
+.arrow-up-color {
+  @apply fill-black stroke-black stroke-1;
+}
+
+.dark .arrow-up-color {
+  @apply fill-white stroke-white stroke-1;
+}
+
 .button-color {
   @apply text-black border border-black hover:bg-black hover:text-white;
 }
 
 .dark .button-color {
   @apply text-white border border-white hover:bg-white hover:text-black;
+}
+
+.logos {
+  @apply fill-neutral-800;
+}
+
+.dark .logos {
+  @apply fill-white;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #525252;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+div.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  width: 120px;
+  padding: 10px 20px;
 }

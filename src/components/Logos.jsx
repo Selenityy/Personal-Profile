@@ -47,7 +47,7 @@ const Logos = () => {
   };
 
   return (
-    <section className="py-10">
+    <div className="py-10">
       <div className="max-w-3xl mx-auto overflow-x-scroll flex space-x-8 px-4 py-2 scroll-container">
         <IoLogoJavascript
           className="size-14 logos shrink-0 transition-transform ease-in-out duration-300 hover:scale-125"
@@ -119,7 +119,7 @@ const Logos = () => {
           onClick={() => onLogoClick(logoWebsites.Cypress)}
         />
       </div>
-    </section>
+    </div>
   );
 };
 

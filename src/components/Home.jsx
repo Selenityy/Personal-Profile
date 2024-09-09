@@ -12,7 +12,10 @@ const Home = () => {
   };
 
   return (
-    <section className="min-h-screen py-32 flex flex-col items-center justify-evenly gap-x-10">
+    <section
+      id="home"
+      className="min-h-screen py-32 flex flex-col items-center justify-evenly gap-x-10"
+    >
       <div className="flex flex-col items-center">
         <h1 className="font-victorian-decade text-8xl font-bold text-color font-light">
           Selena Rodriguez

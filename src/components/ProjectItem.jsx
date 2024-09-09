@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -16,6 +16,33 @@ const ProjectItem = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
+  useEffect(() => {
+    const sections = document.querySelectorAll(".projectsLeft, .projectsRight");
+
+    const observe = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+          //   else {
+          //     entry.target.classList.remove("show");
+          //   }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach((section) => {
+      observe.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observe.unobserve(section);
+      });
+    };
+  });
 
   const handleImageClick = () => {
     router.push(liveDemo);
@@ -30,8 +57,11 @@ const ProjectItem = ({
   };
 
   return (
-    <li className="my-16">
-      {/* <h2 className="font-butler-bold text-2xl text-color">{title}</h2> */}
+    <li
+      className={`my-16 ${
+        placement === "right" ? "projectsRight" : "projectsLeft"
+      }`}
+    >
       <div
         className={`flex items-center gap-10 ${
           placement === "right" ? "flex-row-reverse" : ""

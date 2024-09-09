@@ -1,23 +1,43 @@
 "use client";
 
-import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import React, { useEffect } from "react";
 import Logos from "./Logos";
 
 const About = () => {
-  const onArrowClick = () => {
-    const projectSection = document.getElementById("projects");
-    if (projectSection) {
-      projectSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  useEffect(() => {
+    const sections = document.querySelectorAll(".about");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+          //   else {
+          //     entry.target.classList.remove("show");
+          //   }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
 
   return (
     <section id="about" className="h-fit py-32">
       <h1 className="font-victorian-demo text-8xl font-bold text-color font-light">
         About
       </h1>
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-around about">
         <div className="relative w-80 h-80 my-8">
           {/* Light Mode Frame Image */}
           <img
@@ -55,13 +75,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      {/* <div className="flex items-center justify-center mt-20">
-        <IoIosArrowDown
-          onClick={onArrowClick}
-          className="animate-bounce arrow-color size-8"
-        />
-      </div> */}
-      <div>
+      <div className="about">
         <Logos />
       </div>
     </section>

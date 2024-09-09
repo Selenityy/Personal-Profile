@@ -2,28 +2,14 @@
 
 import React from "react";
 import ProjectList from "./ProjectList";
-import { IoIosArrowDown } from "react-icons/io";
 
 const Projects = () => {
-  const onArrowClick = () => {
-    const resumeSection = document.getElementById("resume");
-    if (resumeSection) {
-      resumeSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section id="projects" className="min-h-screen py-24">
       <h1 className="font-victorian-demo text-8xl font-bold text-color font-light">
         Projects
       </h1>
       <ProjectList />
-      {/* <div className="flex items-center justify-center mt-20">
-        <IoIosArrowDown
-          onClick={onArrowClick}
-          className="animate-bounce arrow-color size-8"
-        />
-      </div> */}
     </section>
   );
 };

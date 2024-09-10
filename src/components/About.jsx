@@ -39,7 +39,7 @@ const About = () => {
       </h1>
 
       {/* Grid Container for Content */}
-      <div className="grid grid-cols-3 md:grid-cols-3 items-center about">
+      <div className="grid grid-cols-3 grid-cols-3 items-center about">
         {/* Image Section */}
         <div className="relative w-80 h-80">
           {/* Light Mode Frame Image */}
@@ -63,7 +63,7 @@ const About = () => {
         </div>
 
         {/* Introduction Text Section */}
-        <div className="space-y-4 md:col-span-2">
+        <div className="space-y-4 col-span-2">
           <div className="flex gap-1.5">
             <p className="font-butler text-color text-lg">Hi, my name is</p>
             <p className="font-butler text-color text-lg">Selena Rodriguez</p>
@@ -80,7 +80,7 @@ const About = () => {
         </div>
 
         {/* Additional Information Section */}
-        <div className="space-y-4 md:col-span-3">
+        <div className="space-y-4 col-span-3">
           <p className="font-butler text-color text-lg">
             I work with modern web development technologies like JavaScript
             (ES6+), React, Next.js, Node.js, Express, and MongoDB, and I'm
@@ -88,9 +88,9 @@ const About = () => {
             development processes. I'm also proficient in front-end tools like
             HTML, CSS, Bootstrap, Sass, and Tailwind, which help me create
             visually appealing and responsive interfaces. My recent projects,
-            such as MemoBoard, a task management application, and
-            OdinBook, a mock social media platform, showcase my ability to build
-            full-stack solutions that are both functional and user-friendly.
+            such as MemoBoard, a task management application, and OdinBook, a
+            mock social media platform, showcase my ability to build full-stack
+            solutions that are both functional and user-friendly.
           </p>
           <p className="font-butler text-color text-lg">
             I am currently looking to join a forward-thinking company where I

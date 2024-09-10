@@ -100,8 +100,9 @@ const About = () => {
             make a meaningful impact.
           </p>
           <p className="font-butler text-color text-lg">
-            Feel free to explore my projects, and if you’d like to connect,
-            please reach out through the contacts section!
+            Feel free to explore my projects below, arranged from newest to
+            oldest, showcasing how my skills have evolved over time. If you’d
+            like to connect, please reach out through the contacts section!
           </p>
         </div>
       </div>

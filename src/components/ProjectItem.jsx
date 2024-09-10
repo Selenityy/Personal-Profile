@@ -66,7 +66,7 @@ const ProjectItem = ({
     >
       <div
         className={`flex items-center flex-col sm:flex-row gap-10 ${
-          placement === "right" ? "flex-row-reverse" : ""
+          placement === "right" ? "flex-col-reverse sm:flex-row-reverse" : ""
         }`}
       >
         <div

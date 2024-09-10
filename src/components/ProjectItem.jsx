@@ -59,16 +59,18 @@ const ProjectItem = ({
   return (
     <li
       className={`my-16 ${
-        placement === "right" ? "projectsRight" : "projectsLeft"
+        placement === "right"
+          ? "projectsRight text-center sm:text-right"
+          : "projectsLeft text-center sm:text-left"
       }`}
     >
       <div
-        className={`flex items-center gap-10 ${
+        className={`flex items-center flex-col sm:flex-row gap-10 ${
           placement === "right" ? "flex-row-reverse" : ""
         }`}
       >
         <div
-          className="relative w-[35rem] h-[20rem] my-6 hover:animate-wiggle"
+          className="relative w-[20rem] h-[10rem] xs:w-[23rem] xs:h-[12rem] sm:w-[35rem] sm:h-[20rem] my-2 sm:my-6 hover:animate-wiggle"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={handleImageClick}
@@ -109,8 +111,10 @@ const ProjectItem = ({
           />
         </div>
         <div
-          className={`flex flex-col w-1/2 ${
-            placement === "right" ? "items-end" : "items-start"
+          className={`flex flex-col w-full sm:w-1/2 ${
+            placement === "right"
+              ? "items-center sm:items-end"
+              : "items-center sm:items-start"
           }`}
         >
           <h2 className="font-butler-black text-2xl text-color">{title}</h2>

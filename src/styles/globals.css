@@ -148,8 +148,6 @@ body {
 }
 
 div.scroll-container {
-  overflow-x: auto;
-  overflow-y: hidden;
   white-space: nowrap;
   padding: 10px;
 }
@@ -176,7 +174,6 @@ div.scroll-container img {
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   justify-items: start;
-  text-align: left;
 }
 
 .projectsLeft.show {
@@ -189,7 +186,6 @@ div.scroll-container img {
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   justify-items: end;
-  text-align: right;
 }
 
 .projectsRight.show {

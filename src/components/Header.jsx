@@ -44,7 +44,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
 
   return (
     <header className="px-2 sm:px-6 md:px-8 py-4 bg-whisper dark:bg-goth flex items-center justify-between">
-      <nav className="flex space-x-2 md:space-x-8 items-center">
+      <nav className="flex space-x-2 sm:space-x-8 items-center">
         <div
           className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
             activeTab === "home"

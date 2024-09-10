@@ -19,7 +19,7 @@ const ProjectList = () => {
       title: "OdinBook",
       subtitle: "Social Network Application",
       description:
-        "A full stack mock social media application that allows users to create a profile, write and comment on posts and connect with others.",
+        "A full-stack mock social media application that allows users to create a profile, write and comment on posts, and connect with others.",
       liveDemo: "https://odin-book-frontend.vercel.app/",
       github: "https://github.com/Selenityy/OdinBook",
       image: "/images/OdinBook1.png",

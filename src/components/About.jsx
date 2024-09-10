@@ -93,15 +93,15 @@ const About = () => {
             solutions that are both functional and user-friendly.
           </p>
           <p className="font-butler text-color text-lg">
-            I am currently looking to join a forward-thinking company where I
+            I am looking to join a forward-thinking company where I
             can contribute my skills, collaborate with talented teams, and learn
             more about the industry from a broader perspective. I'm eager to
             take on full-stack roles where I can continue to grow, innovate, and
             make a meaningful impact.
           </p>
           <p className="font-butler text-color text-lg">
-            Feel free to explore my projects below, arranged from newest to
-            oldest, showcasing how my skills have evolved over time. If you’d
+            Feel free to explore my projects below, from newest to
+            oldest, showcasing how my skills have evolved. If you’d
             like to connect, please reach out through the contacts section!
           </p>
         </div>

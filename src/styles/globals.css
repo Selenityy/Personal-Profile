@@ -163,6 +163,8 @@ div.scroll-container img {
   transform: translateX(100px);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
+  justify-items: start;
+  text-align: left;
 }
 
 .projectsLeft.show {
@@ -174,6 +176,8 @@ div.scroll-container img {
   transform: translateX(-100px);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
+  justify-items: end;
+  text-align: right;
 }
 
 .projectsRight.show {

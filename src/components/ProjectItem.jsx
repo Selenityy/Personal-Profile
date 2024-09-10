@@ -109,7 +109,7 @@ const ProjectItem = ({
           />
         </div>
         <div
-          className={`flex flex-col ${
+          className={`flex flex-col w-1/2 ${
             placement === "right" ? "items-end" : "items-start"
           }`}
         >

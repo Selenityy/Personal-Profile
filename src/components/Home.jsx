@@ -17,10 +17,10 @@ const Home = () => {
       className="min-h-screen py-32 flex flex-col items-center justify-evenly gap-x-10"
     >
       <div className="flex flex-col items-center text-center">
-        <h1 className="font-victorian-decade text-8xl font-bold text-color font-light">
+        <h1 className="font-victorian-decade text-7xl xs:text-8xl font-bold text-color font-light">
           Selena Rodriguez
         </h1>
-        <h2 className="text-3xl text-color font-butler pt-6">
+        <h2 className="text-2xl xs:text-3xl text-color font-butler pt-6">
           Full Stack Developer
         </h2>
         <img

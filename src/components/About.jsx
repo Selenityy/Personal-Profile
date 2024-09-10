@@ -18,7 +18,7 @@ const About = () => {
           //   }
         });
       },
-      { threshold: 0.5 }
+      { rootMargin: "0px -100px -100px 0px", threshold: 0.1 }
     );
 
     sections.forEach((section) => {
@@ -39,7 +39,7 @@ const About = () => {
       </h1>
 
       {/* Grid Container for Content */}
-      <div className="md:grid md:grid-cols-3 md:grid-cols-3 gap-8 items-center about">
+      <div className="md:grid md:grid-cols-3 flex flex-col gap-8 items-center about">
         {/* Image Section */}
         <div className="relative w-80 h-80">
           {/* Light Mode Frame Image */}
@@ -63,7 +63,7 @@ const About = () => {
         </div>
 
         {/* Introduction Text Section */}
-        <div className="space-y-4 md:col-span-2 mb-4">
+        <div className="space-y-4 md:col-span-2">
           <div className="flex gap-1.5">
             <p className="font-butler text-color text-lg">Hi, my name is</p>
             <p className="font-butler text-color text-lg">Selena Rodriguez</p>

@@ -18,7 +18,6 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         });
       },
       {
-        rootMargin: "0px 0px 0px 0px",
         threshold: 0.1,
       }
     );
@@ -44,11 +43,13 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
   };
 
   return (
-    <header className="px-4 sm:px-6 md:px-8 py-4 bg-whisper dark:bg-goth flex items-center justify-between">
-      <nav className="flex space-x-4 md:space-x-8 items-center">
+    <header className="px-2 sm:px-6 md:px-8 py-4 bg-whisper dark:bg-goth flex items-center justify-between">
+      <nav className="flex space-x-2 md:space-x-8 items-center">
         <div
           className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
-            activeTab === "home" ? "font-butler-black text-lg" : ""
+            activeTab === "home"
+              ? "font-butler-black sm:text-sm md:text-lg"
+              : ""
           }`}
           onClick={() => handleTabClick("home")}
         >
@@ -56,7 +57,9 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         </div>
         <div
           className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
-            activeTab === "about" ? "font-butler-black text-lg" : ""
+            activeTab === "about"
+              ? "font-butler-black sm:text-sm md:text-lg"
+              : ""
           }`}
           onClick={() => handleTabClick("about")}
         >
@@ -64,7 +67,9 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         </div>
         <div
           className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
-            activeTab === "projects" ? "font-butler-black text-lg" : ""
+            activeTab === "projects"
+              ? "font-butler-black sm:text-sm md:text-lg"
+              : ""
           }`}
           onClick={() => handleTabClick("projects")}
         >
@@ -72,7 +77,9 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         </div>
         <div
           className={`font-butler-bold tracking-wide text-color hover:font-butler-black active:font-butler-black focus:font-butler-black cursor-pointer ${
-            activeTab === "contact" ? "font-butler-black text-lg" : ""
+            activeTab === "contact"
+              ? "font-butler-black sm:text-sm md:text-lg"
+              : ""
           }`}
           onClick={() => handleTabClick("contact")}
         >

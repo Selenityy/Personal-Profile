@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        xxs: "250px",
         xs: "375px",
       },
       container: {
@@ -27,7 +28,7 @@ module.exports = {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
-        zoom: "ease-in-out"
+        zoom: "ease-in-out",
       },
       colors: {
         whisper: "#EEEEEE",
